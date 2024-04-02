@@ -10,10 +10,10 @@ class PrologUseCase:
 
     def make_question(self, question):
 
-        for response in self.prolog.query(f"saludo('{question}', Response)"):
+        for response in self.prolog.query(f"saludo('{question}', response)"):
             return response
         
-        for response in self.prolog.query(f"responder('{question}', Response)"):
+        for response in self.prolog.query(f"responder('{question}', response)"):
             return response
 
 
