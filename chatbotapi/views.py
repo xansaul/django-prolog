@@ -1,7 +1,7 @@
 from django.http import JsonResponse
 from rest_framework.views import APIView
 
-from chatbot.chatbotapi.serializers import QuestionSerializer
+from .serializers import QuestionSerializer
 
 from .prolog.helpers import find_similar_question
 from .prolog.questions import questions
@@ -11,6 +11,7 @@ import os
 
 
 class ChatbotView(APIView):
+
 
     def post(self, request):
 
