@@ -1,0 +1,426 @@
+
+[
+    {
+        "question": "¿Cuál es la diferencia entre una lista y una tupla en Python?",
+        "answer": "Una lista es un tipo de dato mutable, lo que significa que se pueden modificar sus elementos después de su creación. Por otro lado, una tupla es inmutable, lo que significa que una vez que se crea, no se pueden modificar sus elementos. Las listas se representan entre corchetes [], mientras que las tuplas se representan entre paréntesis ()."
+    },
+    {
+        "question": "¿Qué es la recursión en Python y cómo se implementa?",
+        "answer": "La recursión en Python es un concepto en el que una función se llama a sí misma directa o indirectamente para resolver un problema. Para implementar la recursión en Python, se define una función que se llame a sí misma dentro de su cuerpo, con una condición base que evite que la recursión continúe indefinidamente."
+    },
+    {
+        "question": "¿Cómo se realiza la concatenación de cadenas en Python?",
+        "answer": "La concatenación de cadenas en Python se realiza mediante el operador de suma (+). Por ejemplo, para concatenar dos cadenas cadena1 y cadena2, se puede utilizar el siguiente código: cadena1 + cadena2. También se puede utilizar el método join() de la clase str para concatenar múltiples cadenas."
+    },
+    {
+        "question": "¿Qué es una excepción en Python?",
+        "answer": "Una excepción en Python es un evento que interrumpe el flujo normal de ejecución de un programa. Puede ocurrir cuando una operación no se puede realizar correctamente, como la división por cero o el intento de acceder a un elemento fuera de rango en una lista. Las excepciones se manejan con bloques try-except."
+    },
+    {
+        "question": "¿Cuál es la diferencia entre == y is en Python?",
+        "answer": "En Python, == se utiliza para verificar si dos objetos tienen el mismo valor, mientras que is se utiliza para verificar si dos objetos son el mismo objeto en memoria. == compara los contenidos de los objetos, mientras que is compara las direcciones de memoria de los objetos."
+    },
+    {
+        "question": "¿Qué es una comprensión de listas en Python?",
+        "answer": "Una comprensión de listas en Python es una forma concisa y legible de crear listas. Permite generar listas aplicando una expresión a cada elemento de otra secuencia (como una lista, una tupla o un rango) y opcionalmente aplicando condiciones para filtrar los elementos. Se escriben entre corchetes [] y pueden incluir expresiones for y if."
+    },
+    {
+        "question": "¿Cómo se manejan los archivos en Python?",
+        "answer": "En Python, los archivos se manejan utilizando la función open() para abrir un archivo en un modo específico (lectura, escritura, etc.). Una vez abierto, se pueden leer o escribir datos en el archivo utilizando métodos como read(), write() y close(). Es importante cerrar el archivo después de su uso para liberar recursos."
+    },
+    {
+        "question": "¿Qué son los decoradores en Python?",
+        "answer": "Los decoradores en Python son una característica que permite modificar o extender el comportamiento de funciones o métodos de manera declarativa. Se definen con el símbolo @ seguido del nombre del decorador, encima de la definición de la función que se desea decorar. Los decoradores son funciones que toman otra función como argumento y devuelven otra función."
+    },
+    {
+        "question": "¿Qué es la programación orientada a objetos (POO) en Python?",
+        "answer": "La programación orientada a objetos (POO) en Python es un paradigma de programación en el que los conceptos del mundo real se modelan como objetos que tienen atributos (variables) y métodos (funciones). Python es un lenguaje orientado a objetos, lo que significa que casi todo en Python es un objeto, con sus propiedades y métodos."
+    },
+    {
+        "question": "¿Cuál es la diferencia entre break y continue en Python?",
+        "answer": "break y continue son palabras clave utilizadas en bucles en Python. break se utiliza para salir completamente de un bucle, mientras que continue se utiliza para omitir la iteración actual y pasar a la siguiente iteración del bucle."
+    },
+    {
+        "question": "¿Qué es un generador en Python y cómo se define?",
+        "answer": "Un generador en Python es una función especial que devuelve un iterador, que puede ser iterado sobre él una vez. A diferencia de una función normal que devuelve una sola vez, un generador puede generar múltiples valores a lo largo del tiempo. Se define utilizando la palabra clave yield en lugar de return dentro de una función."
+    },
+    {
+        "question": "¿Cómo se manejan los errores en Python?",
+        "answer": "En Python, los errores se manejan mediante bloques try-except. El código que puede producir un error se coloca dentro del bloque try, y cualquier código que maneje el error se coloca dentro del bloque except. Esto permite al programa continuar ejecutándose incluso si se produce un error, y proporciona la oportunidad de manejarlo de manera adecuada."
+    },
+    {
+        "question": "¿Qué es una función lambda en Python?",
+        "answer": "Una función lambda en Python es una función anónima y pequeña que se define sin un nombre utilizando la palabra clave lambda. Son útiles para escribir código más conciso en situaciones donde solo se necesita una función simple y de corta duración. Las funciones lambda pueden tener cualquier número de argumentos pero solo pueden contener una expresión."
+    },
+    {
+        "question": "¿Qué es la herencia en Python?",
+        "answer": "La herencia en Python es un concepto en el que una clase (llamada subclase o clase hija) puede heredar atributos y métodos de otra clase (llamada superclase o clase padre). Esto permite la reutilización de código y la creación de jerarquías de clases. En Python, la herencia se especifica dentro de los paréntesis al definir una clase."
+    },
+    {
+        "question": "¿Cómo estás?",
+        "answer": "Bien, ¿y tú?"
+    },
+    {
+        "question": "¿Qué tal tu día?",
+        "answer": "Bastante bien, gracias. ¿Y el tuyo?"
+    },
+    {
+        "question": "¿Qué has hecho hoy?",
+        "answer": "Nada en especial, ¿tú?"
+    },
+    {
+        "question": "¿Cuál es tu comida favorita?",
+        "answer": "Me encanta la pizza. ¿Y a ti?"
+    },
+    {
+        "question": "¿Qué música te gusta?",
+        "answer": "Me gusta un poco de todo, ¿y tú?"
+    },
+    {
+        "question": "¿Has visto alguna película interesante últimamente?",
+        "answer": "Sí, vi una película genial el otro día. ¿Y tú?"
+    },
+    {
+        "question": "¿Qué planes tienes para el fin de semana?",
+        "answer": "Todavía no lo sé, ¿tienes alguna sugerencia?"
+    },
+    {
+        "question": "¿Has estado en algún viaje recientemente?",
+        "answer": "Sí, fui a la playa el mes pasado. ¿Y tú?"
+    },
+    {
+        "question": "¿Qué opinas del clima últimamente?",
+        "answer": "Ha estado un poco loco, ¿no crees?"
+    },
+    {
+        "question": "¿Cómo te va en el trabajo o la escuela?",
+        "answer": "Va bien, gracias por preguntar. ¿Y tú?"
+    },
+    {
+        "question": "Bien, ¿y tú?",
+        "answer": "Estoy bastante bien, gracias por preguntar."
+    },
+    {
+        "question": "Bastante bien, gracias. ¿Y el tuyo?",
+        "answer": "El mío también ha sido bastante bueno, gracias."
+    },
+    {
+        "question": "Nada en especial, ¿tú?",
+        "answer": "No mucho, solo algunas tareas habituales. ¿Y tú?"
+    },
+    {
+        "question": "Me encanta la pizza. ¿Y a ti?",
+        "answer": "También me encanta la pizza, es una de mis comidas favoritas."
+    },
+    {
+        "question": "Me gusta un poco de todo, ¿y tú?",
+        "answer": "Tengo gustos variados, pero últimamente he estado escuchando mucho rock."
+    },
+    {
+        "question": "Sí, vi una película genial el otro día. ¿Y tú?",
+        "answer": "No, no he tenido tiempo para ver películas últimamente."
+    },
+    {
+        "question": "Todavía no lo sé, ¿tienes alguna sugerencia?",
+        "answer": "¿Qué te parece ir a hacer senderismo o visitar algún museo?"
+    },
+    {
+        "question": "Sí, fui a la playa el mes pasado. ¿Y tú?",
+        "answer": "No, no he tenido la oportunidad de viajar recientemente."
+    },
+    {
+        "question": "Ha estado un poco loco, ¿no crees?",
+        "answer": "Sí, definitivamente. El clima parece cada vez más impredecible."
+    },
+    {
+        "question": "Va bien, gracias por preguntar. ¿Y tú?",
+        "answer": "Me alegra escuchar eso. En mi caso, también va bien, gracias."
+    },
+    {
+        "question": "¿Qué es un lenguaje de programación?",
+        "answer": "Un lenguaje de programación es un conjunto de instrucciones que permiten a un programador escribir código para comunicarse con una computadora y realizar tareas específicas."
+    },
+    {
+        "question": "¿Cuál es la diferencia entre un compilador y un intérprete?",
+        "answer": "Un compilador traduce todo el código fuente de un programa a código máquina en un solo paso, mientras que un intérprete traduce y ejecuta el código línea por línea."
+    },
+    {
+        "question": "¿Qué es una variable en programación?",
+        "answer": "Una variable es un espacio de memoria que se utiliza para almacenar valores que pueden cambiar durante la ejecución de un programa."
+    },
+    {
+        "question": "¿Cómo se declara una función en la mayoría de los lenguajes de programación?",
+        "answer": "En la mayoría de los lenguajes de programación, una función se declara utilizando la palabra clave function seguida del nombre de la función, paréntesis que contienen los parámetros y llaves que contienen el cuerpo de la función."
+    },
+    {
+        "question": "¿Qué es una estructura de control en programación?",
+        "answer": "Una estructura de control es una instrucción que determina el flujo de ejecución de un programa. Ejemplos comunes incluyen if-else, bucles for y bucles while."
+    },
+    {
+        "question": "¿Qué es la programación orientada a objetos?",
+        "answer": "La programación orientada a objetos es un paradigma de programación que utiliza objetos y clases para organizar y estructurar el código. Se basa en conceptos como la encapsulación, la herencia y el polimorfismo."
+    },
+    {
+        "question": "¿Cuál es la importancia de los comentarios en el código?",
+        "answer": "Los comentarios son importantes porque ayudan a otros programadores a entender el código, facilitan el mantenimiento y la depuración, y proporcionan documentación sobre cómo funciona el programa."
+    },
+    {
+        "question": "¿Qué es la recursividad en programación?",
+        "answer": "La recursividad es un concepto en programación donde una función se llama a sí misma para resolver un problema. Se utiliza comúnmente en algoritmos de búsqueda y de dividir y conquistar."
+    },
+    {
+        "question": "¿Qué son los tipos de datos en programación?",
+        "answer": "Los tipos de datos son valores que pueden ser almacenados y manipulados en un programa. Ejemplos incluyen enteros, flotantes, cadenas de caracteres y booleanos."
+    },
+    {
+        "question": "¿Qué es la depuración de código?",
+        "answer": "La depuración de código es el proceso de encontrar y corregir errores en un programa. Se realiza mediante la identificación y eliminación de errores de sintaxis, lógica o tiempo de ejecución."
+    },
+
+    {
+        "question": "¿Quién escribió la obra Don Quijote de la Mancha?",
+        "answer": "Miguel de Cervantes."
+    },
+    {
+        "question": "¿Cuál es la capital de Francia?",
+        "answer": "París."
+    },
+    {
+        "question": "¿En qué año ocurrió la Revolución Francesa?",
+        "answer": "Comenzó en 1789."
+    },
+    {
+        "question": "¿Quién pintó la Mona Lisa?",
+        "answer": "Leonardo da Vinci."
+    },
+    {
+        "question": "¿Qué es la Mona Lisa?",
+        "answer": "Es una famosa pintura del Renacimiento italiano, también conocida como La Gioconda."
+    },
+    {
+        "question": "¿Quién fue el primer presidente de los Estados Unidos?",
+        "answer": "George Washington."
+    },
+    {
+        "question": "¿Cuál es el río más largo del mundo?",
+        "answer": "El río Amazonas."
+    },
+    {
+        "question": "¿En qué país se encuentra la Gran Muralla China?",
+        "answer": "En China."
+    },
+    {
+        "question": "¿Quién fue el autor de Romeo y Julieta?",
+        "answer": "William Shakespeare."
+    },
+    {
+        "question": "¿Quién fue el primer hombre en pisar la luna?",
+        "answer": "Neil Armstrong."
+    },
+
+    {
+        "question": "¿Cuál es la montaña más alta del mundo?",
+        "answer": "El Monte Everest."
+    },
+    {
+        "question": "¿En qué país se encuentra el Taj Mahal?",
+        "answer": "En India."
+    },
+    {
+        "question": "¿Quién escribió Romeo y Julieta?",
+        "answer": "William Shakespeare."
+    },
+    {
+        "question": "¿Cuál es la capital de Japón?",
+        "answer": "Tokio."
+    },
+    {
+        "question": "¿Quién fue el primer presidente de México?",
+        "answer": "Benito Juárez."
+    },
+    {
+        "question": "¿Qué es la Gran Barrera de Coral?",
+        "answer": "Es el sistema de arrecifes de coral más grande del mundo, ubicado en Australia."
+    },
+    {
+        "question": "¿En qué año terminó la Segunda Guerra Mundial?",
+        "answer": "En 1945."
+    },
+    {
+        "question": "¿Quién fue el líder de la Revolución Cubana?",
+        "answer": "Fidel Castro."
+    },
+    {
+        "question": "¿Cuál es el océano más grande del mundo?",
+        "answer": "El Océano Pacífico."
+    },
+    {
+        "question": "¿Quién pintó La noche estrellada?",
+        "answer": "Vincent van Gogh."
+    },
+
+    {
+        "question": "¿Qué es la programación?",
+        "answer": "La programación es el proceso de crear conjuntos de instrucciones que dicen a una computadora cómo realizar una tarea específica."
+    },
+    {
+        "question": "¿Qué es un algoritmo?",
+        "answer": "Un algoritmo es un conjunto de pasos precisos y ordenados que se utilizan para resolver un problema o realizar una tarea específica."
+    },
+    {
+        "question": "¿Qué es un sistema operativo?",
+        "answer": "Un sistema operativo es un software que actúa como intermediario entre el hardware de una computadora y sus usuarios. Administra los recursos de la computadora y proporciona servicios a los programas de aplicación."
+    },
+    {
+        "question": "¿Qué es la inteligencia artificial?",
+        "answer": "La inteligencia artificial es el campo de la informática que se ocupa de crear sistemas capaces de realizar tareas que normalmente requieren inteligencia humana, como el reconocimiento de voz, la toma de decisiones y la comprensión del lenguaje natural."
+    },
+    {
+        "question": "¿Qué es la nube (computación en la nube)?",
+        "answer": "La computación en la nube es la entrega de servicios de computación a través de Internet. Permite acceder a recursos como almacenamiento, servidores y aplicaciones bajo demanda, sin la necesidad de poseer hardware o infraestructura física."
+    },
+    {
+        "question": "¿Qué es la seguridad informática?",
+        "answer": "La seguridad informática es el conjunto de técnicas y procedimientos diseñados para proteger la integridad, confidencialidad y disponibilidad de los datos y recursos de una computadora."
+    },
+    {
+        "question": "¿Qué es la realidad virtual?",
+        "answer": "La realidad virtual es una tecnología que utiliza hardware y software para crear una experiencia simulada e inmersiva. Permite a los usuarios interactuar con un entorno tridimensional generado por computadora."
+    },
+    {
+        "question": "¿Qué es el almacenamiento en estado sólido (SSD)?",
+        "answer": "El almacenamiento en estado sólido es una tecnología de almacenamiento de datos que utiliza chips de memoria flash para almacenar información de forma permanente. Es más rápido y resistente que los discos duros tradicionales."
+    },
+    {
+        "question": "¿Qué es la realidad aumentada?",
+        "answer": "La realidad aumentada es una tecnología que combina elementos del mundo real con elementos virtuales generados por computadora. Permite superponer información digital, como imágenes y texto, en el entorno físico."
+    },
+    {
+        "question": "¿Qué es la Inteligencia Artificial (IA)?",
+        "answer": "La Inteligencia Artificial es un área de la informática que se enfoca en la creación de sistemas capaces de realizar tareas que normalmente requieren inteligencia humana, como el reconocimiento de patrones, el aprendizaje, la toma de decisiones y la resolución de problemas."
+    },
+    {
+        "question": "¿Cuáles son algunos ejemplos de aplicaciones de IA en la vida cotidiana?",
+        "answer": "Algunos ejemplos de aplicaciones de IA en la vida cotidiana incluyen los sistemas de recomendación de películas o música, los asistentes virtuales como Siri o Alexa, los sistemas de reconocimiento facial en redes sociales y los vehículos autónomos."
+    },
+    {
+        "question": "¿Cuáles son las principales ramas de la Inteligencia Artificial?",
+        "answer": "Las principales ramas de la Inteligencia Artificial incluyen el aprendizaje automático (machine learning), el procesamiento del lenguaje natural (NLP), la visión por computadora, la robótica y la planificación automatizada."
+    },
+    {
+        "question": "¿Qué es el aprendizaje automático (machine learning)?",
+        "answer": "El aprendizaje automático es una rama de la Inteligencia Artificial que se enfoca en el desarrollo de algoritmos y modelos que permiten a las computadoras aprender y mejorar automáticamente a partir de datos."
+    },
+    {
+        "question": "¿Cuál es la diferencia entre IA estrecha y IA general?",
+        "answer": "La IA estrecha, también conocida como IA específica o débil, se refiere a sistemas que están diseñados para realizar tareas específicas, como reconocimiento de voz o clasificación de imágenes. La IA general, también conocida como IA fuerte o AGI (Inteligencia Artificial General), se refiere a sistemas que tienen la capacidad de entender, aprender y realizar cualquier tarea que un humano pueda hacer."
+    },
+    {
+        "question": "¿Qué es el procesamiento del lenguaje natural (NLP)?",
+        "answer": "El procesamiento del lenguaje natural es una rama de la Inteligencia Artificial que se ocupa de la interacción entre las computadoras y el lenguaje humano. Se utiliza en aplicaciones como la traducción automática, la generación de texto y el análisis de sentimientos."
+    },
+    {
+        "question": "¿Cuáles son algunos desafíos éticos y sociales asociados con la Inteligencia Artificial?",
+        "answer": "Algunos desafíos éticos y sociales asociados con la Inteligencia Artificial incluyen la privacidad y seguridad de los datos, el sesgo algorítmico, el impacto en el empleo y la autonomía de las máquinas."
+    },
+    {
+        "question": "¿Qué es un algoritmo de aprendizaje supervisado?",
+        "answer": "Un algoritmo de aprendizaje supervisado es un tipo de algoritmo de aprendizaje automático que se entrena utilizando ejemplos etiquetados. El modelo aprende a realizar predicciones basadas en ejemplos de entrada y salida conocidos."
+    },
+    {
+        "question": "¿Qué es la robótica?",
+        "answer": "La robótica es un campo interdisciplinario que combina la ingeniería mecánica, eléctrica y de software para diseñar, construir y operar robots. Los robots son dispositivos programables que pueden realizar tareas de manera autónoma o controlada por humanos."
+    },
+    {
+        "question": "¿Cómo se puede mitigar el sesgo en los sistemas de IA?",
+        "answer": "El sesgo en los sistemas de IA se puede mitigar mediante la recopilación y selección de datos representativos, el diseño de algoritmos imparciales, y la implementación de procesos de auditoría y revisión ética."
+    },
+    {
+        "question": "¿Qué serie has estado viendo últimamente?",
+        "answer": "Estoy enganchado/a a una serie llamada 'Breaking Bad'. ¿Y tú?"
+    },
+    {
+        "question": "¿Tienes alguna mascota?",
+        "answer": "Sí, tengo un perro llamado Max. ¿Y tú?"
+    },
+    {
+        "question": "¿Cuál es tu deporte favorito?",
+        "answer": "Me encanta el fútbol, ¿y a ti?"
+    },
+    {
+        "question": "¿Has probado algún nuevo hobby recientemente?",
+        "answer": "Sí, empecé a aprender a tocar la guitarra. ¿Tú has intentado algo nuevo últimamente?"
+    },
+    {
+        "question": "¿Cuál es tu lugar favorito para relajarte?",
+        "answer": "Me gusta ir al parque y leer un buen libro. ¿Y tú?"
+    },
+    {
+        "question": "¿Tienes algún plan para las próximas vacaciones?",
+        "answer": "Estoy planeando un viaje a las montañas. ¿Y tú?"
+    },
+    {
+        "question": "¿Cuál es tu restaurante favorito?",
+        "answer": "Me encanta un restaurante italiano llamado 'La Trattoria'. ¿Y a ti?"
+    },
+    {
+        "question": "¿Has probado alguna nueva receta últimamente?",
+        "answer": "Sí, hice un guiso de pollo con verduras que estaba delicioso. ¿Tú has cocinado algo nuevo?"
+    },
+    {
+        "question": "¿Te gustaría aprender algún nuevo idioma?",
+        "answer": "Sí, me encantaría aprender francés en algún momento. ¿Y tú?"
+    },
+    {
+        "question": "¿Cuál es tu libro favorito?",
+        "answer": "Mi libro favorito es 'El Principito' de Antoine de Saint-Exupéry. ¿Y el tuyo?"
+    },
+    {
+        "question": "¿Qué actividad te gusta hacer al aire libre?",
+        "answer": "Disfruto mucho caminar por el parque o montar en bicicleta. ¿Y tú?"
+    },
+    {
+        "question": "¿Tienes algún pasatiempo creativo?",
+        "answer": "Sí, me gusta pintar y dibujar en mi tiempo libre. ¿Y tú?"
+    },
+    {
+        "question": "¿Qué te inspira en la vida?",
+        "answer": "Me inspira la naturaleza y la gente que lucha por sus sueños. ¿Y a ti?"
+    },
+    {
+        "question": "¿Cuál es tu lugar favorito para viajar?",
+        "answer": "Me encanta la playa, especialmente en destinos tropicales. ¿Y tú?"
+    },
+    {
+        "question": "¿Qué te gustaría aprender en el futuro?",
+        "answer": "Me gustaría aprender a tocar el piano y tal vez aprender a programar. ¿Y tú?"
+    },
+    {
+        "question": "¿Cuál es tu temporada del año favorita?",
+        "answer": "Me encanta el otoño por los colores de las hojas y el clima fresco. ¿Y a ti?"
+    },
+    {
+        "question": "¿Qué actividad te relaja después de un día estresante?",
+        "answer": "Me relaja mucho escuchar música suave o practicar yoga. ¿Y tú?"
+    },
+    {
+        "question": "¿Qué opinas sobre la importancia de la amistad?",
+        "answer": "Creo que la amistad es fundamental para la felicidad y el bienestar emocional. ¿Tú qué piensas?"
+    },
+    {
+        "question": "¿Tienes algún lugar al que te gustaría viajar en el futuro?",
+        "answer": "Sí, me encantaría visitar Japón y explorar su cultura y paisajes. ¿Y tú?"
+    },
+    {
+        "question": "¿Qué te motiva a levantarte por las mañanas?",
+        "answer": "Me motiva el deseo de alcanzar mis metas y hacer que cada día cuente. ¿Y a ti?"
+    },
+    {
+        "question": "¿Quién eres?",
+        "answer": "Un asistente"
+    },
+    {
+        "question": "¿apoco si tiling?",
+        "answer": "fornai"
+    }
+]
