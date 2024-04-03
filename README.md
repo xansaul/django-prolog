@@ -3,12 +3,10 @@
 
 ## Prolog Configuration
 
-Open Prolog and set a Windows environment variable:
+Set environment variable on your operating system.
 
 ```
-putenv("SWI_HOME_DIR=C:\\Program Files\\swipl");
-if (PL_initialise(argc, argv))
-    PL_halt(1);
+SWI_HOME_DIR=C:\\Program Files\\swipl
 ```
 
 ## Django project
