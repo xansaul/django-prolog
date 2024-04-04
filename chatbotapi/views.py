@@ -1,4 +1,4 @@
-from django.http import JsonResponse
+from rest_framework.response import Response
 from rest_framework.views import APIView
 
 from .serializers import QuestionSerializer
@@ -18,7 +18,7 @@ class ChatbotView(APIView):
         serialized_data = QuestionSerializer(data=request.data)
 
         if not serialized_data.is_valid():
-            return JsonResponse(serialized_data.errors, status=400)
+            return Response(serialized_data.errors, status=400)
 
         question = find_similar_question(serialized_data.data.get('question'), questions)
 
@@ -28,6 +28,6 @@ class ChatbotView(APIView):
 
         response = PrologUseCase(prolog_file_path).make_question(question)
 
-        return JsonResponse({
-            'bot': response
+        return Response({
+            "answer" : response.get("Response")
         })
